@@ -1597,3 +1597,459 @@ h4 {
         animation: none !important;
     }
 }
+/* =========================================================
+   V14 — FINAL MOBILE RESPONSIVE FIX
+   HERO + CONTACT FOOTER CENTER ALIGNMENT
+   ========================================================= */
+
+
+/* =========================================================
+   1. MOBILE HERO FIX
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    /* Main hero */
+    .hero {
+        padding-top: 105px;
+        padding-bottom: 5px;
+        min-height: auto;
+    }
+
+    /* Hero stage */
+    .hero-stage-v4 {
+        width: 100%;
+        height: 390px;
+        min-height: 390px;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    /* 3D scene */
+    .v4-scene {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        transform: scale(.50);
+        transform-origin: 54% 42%;
+    }
+
+    /* Central holographic AK */
+    .v4-core-shell {
+        left: 54%;
+        top: 48%;
+
+        transform:
+            translateZ(10px)
+            scale(.62);
+    }
+
+    /* AK logo badge */
+    .v4-logo-badge {
+        left: 54%;
+        top: 48%;
+
+        transform:
+            translateZ(90px)
+            scale(.62);
+    }
+
+    /* Orbit A */
+    .v4-orbit.orbit-a {
+        width: 390px;
+        height: 390px;
+        margin: -195px;
+    }
+
+    /* Orbit B */
+    .v4-orbit.orbit-b {
+        width: 440px;
+        height: 440px;
+        margin: -220px;
+    }
+
+    /* Orbit C */
+    .v4-orbit.orbit-c {
+        width: 300px;
+        height: 300px;
+        margin: -150px;
+    }
+
+    /* Technology nodes */
+    .n-salesforce {
+        left: 1%;
+        top: 25%;
+    }
+
+    .n-apex {
+        right: 1%;
+        top: 25%;
+    }
+
+    .n-flow {
+        left: 1%;
+        bottom: 19%;
+    }
+
+    .n-lwc {
+        right: 1%;
+        bottom: 21%;
+    }
+
+    /* Remove unnecessary desktop decorations */
+    .n-api,
+    .n-soql,
+    .v4-code-card,
+    .v4-status,
+    .v4-data-line,
+    .v4-floor,
+    .hero-interaction-hint {
+        display: none !important;
+    }
+
+    /* Marquee */
+    .marquee {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .marquee div {
+        gap: 20px;
+        padding: 13px 0;
+        font-size: 8px;
+        letter-spacing: .16em;
+    }
+
+    /* Mobile stats */
+    .hero-stats {
+        justify-content: center;
+        gap: 14px;
+        width: 100%;
+    }
+
+    .hero-stats div {
+        padding-left: 12px;
+    }
+
+    /* Scroll cue hide */
+    .scroll-cue {
+        display: none !important;
+    }
+}
+
+
+/* =========================================================
+   2. SMALL PHONE HERO
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+    .hero {
+        padding-top: 100px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-stage-v4 {
+        height: 355px;
+        min-height: 355px;
+    }
+
+    .v4-scene {
+        transform: scale(.45);
+        transform-origin: 54% 40%;
+    }
+
+    .v4-core-shell {
+        transform:
+            translateZ(5px)
+            scale(.56);
+    }
+
+    .v4-logo-badge {
+        transform:
+            translateZ(80px)
+            scale(.56);
+    }
+
+    .n-salesforce {
+        left: -2%;
+    }
+
+    .n-apex {
+        right: -2%;
+    }
+
+    .n-flow {
+        left: -2%;
+    }
+
+    .n-lwc {
+        right: -2%;
+    }
+}
+
+
+/* =========================================================
+   3. VERY SMALL PHONE
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .hero-stage-v4 {
+        height: 330px;
+        min-height: 330px;
+    }
+
+    .v4-scene {
+        transform: scale(.41);
+        transform-origin: 54% 39%;
+    }
+
+    .v4-core-shell {
+        transform:
+            translateZ(5px)
+            scale(.52);
+    }
+
+    .v4-logo-badge {
+        transform:
+            translateZ(70px)
+            scale(.52);
+    }
+
+    .n-salesforce,
+    .n-apex,
+    .n-flow,
+    .n-lwc {
+        font-size: 8px;
+    }
+}
+
+
+/* =========================================================
+   4. CONTACT SECTION — MOBILE CENTER FIX
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    /* Contact entire section */
+    .v9-contact {
+        text-align: center;
+    }
+
+    /* Contact layout */
+    .contact-v9-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        align-items: center;
+        justify-items: center;
+        margin-top: 0;
+    }
+
+    /* Left contact content */
+    .contact-v9-left {
+        width: 100%;
+        min-height: auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Contact orbit */
+    .contact-orbit {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Contact status */
+    .contact-status {
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Contact channels */
+    .contact-direct {
+        width: 100%;
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-channel {
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Contact form */
+    .contact-v9-form {
+        width: 100%;
+        max-width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    /* Form heading */
+    .form-top {
+        text-align: left;
+    }
+}
+
+
+/* =========================================================
+   5. FOOTER — CENTER EVERYTHING ON MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 22px;
+    }
+
+    /* Footer logo + name */
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-brand img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .footer-brand strong {
+        font-size: 14px;
+        letter-spacing: .13em;
+    }
+
+    .footer-brand span {
+        font-size: 10px;
+        margin-top: 3px;
+    }
+
+    /* Footer navigation */
+    .footer-links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .footer-links a {
+        font-size: 11px;
+    }
+
+    /* Footer tagline */
+    .footer-inner > p {
+        order: initial;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        font-size: 11px;
+    }
+
+    /* Copyright */
+    .copyright {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 9px;
+        line-height: 1.6;
+    }
+}
+
+
+/* =========================================================
+   6. CONTACT FORM — SMALL PHONE
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+    .contact-v9-form {
+        width: calc(100% - 26px);
+        padding: 21px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-v9-form .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+
+    .form-ready {
+        justify-content: flex-start;
+    }
+
+    .contact-v9-form .form-note {
+        text-align: left;
+    }
+}
+
+
+/* =========================================================
+   7. FINAL MOBILE WIDTH SAFETY
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: calc(100% - 26px);
+        max-width: 100%;
+    }
+
+    .section {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .contact-v9,
+    footer,
+    .v5-projects,
+    .v6-about,
+    .v6-skills,
+    .v7-journey,
+    .v8-resume {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img,
+    svg,
+    canvas {
+        max-width: 100%;
+    }
+}
+
